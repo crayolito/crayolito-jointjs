@@ -2,6 +2,7 @@
   "name": "joint-kitchen-sink-react-js",
   "version": "3.5.0",
   "private": true,
+  "homepage": "https://crayolito.githud.io/crayolito-jointjs",
   "dependencies": {
     "@clientio/rappid": "file:../../../build/package/rappid.tgz",
     "gh-pages": "^4.0.0",
@@ -11,6 +12,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node node_modules/react-scripts/scripts/start.js",
     "build": "node node_modules/react-scripts/scripts/build.js",
     "test": "echo \"No test specified\"",
